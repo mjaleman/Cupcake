@@ -73,6 +73,9 @@ class FlavorFragment : Fragment() {
         binding = null
     }
 
+    /**
+     * Cancels Order by resetting all quantities and returning to startFragment
+     */
     fun cancelOrder(){
         sharedViewModel.resetOrder()
         findNavController().navigate(R.id.action_flavorFragment_to_startFragment)
